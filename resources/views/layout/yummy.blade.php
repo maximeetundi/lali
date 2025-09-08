@@ -33,24 +33,24 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="{{ url('/yummy') }}" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">{{ config('app.name', 'Yummy') }}</h1>
         <span>.</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{{ url('/yummy') }}#hero" class="active">Accueil</a></li>
-          <li><a href="{{ url('/yummy') }}#about">A propos</a></li>
-          <li><a href="{{ url('/yummy') }}#menu">Menu</a></li>
-          <li><a href="{{ url('/yummy') }}#events">Evénements</a></li>
-          <li><a href="{{ url('/yummy') }}#gallery">Galerie</a></li>
-          <li><a href="{{ url('/yummy') }}#contact">Contact</a></li>
+          <li><a href="{{ url('/') }}#hero" class="active">Accueil</a></li>
+          <li><a href="{{ url('/') }}#about">A propos</a></li>
+          <li><a href="{{ url('/') }}#menu">Menu</a></li>
+          <li><a href="{{ url('/') }}#events">Evénements</a></li>
+          <li><a href="{{ url('/') }}#gallery">Galerie</a></li>
+          <li><a href="{{ url('/') }}#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="{{ url('/yummy') }}#book-a-table">Réserver</a>
+      <a class="btn-getstarted" href="{{ url('/') }}#book-a-table">Réserver</a>
 
     </div>
   </header>

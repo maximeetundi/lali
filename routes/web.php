@@ -17,7 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// Homepage uses the existing index view (now on Yummy layout)
+Route::view('/', 'index')->name('home');
+
+// Preserve legacy homepage at /legacy
+Route::get('/legacy', [HomeController::class, 'index'])->name('home.legacy');
 Route::get('/view/product/{product}', [HomeController::class, 'show'])->name('product.view');
 Route::supportBubble();
 

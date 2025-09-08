@@ -1,5 +1,5 @@
 
-@extends('layout.app')
+@extends('layout.yummy')
 @section('content')
   <main id="main">
        <!-- ======= About Us Section ======= -->
