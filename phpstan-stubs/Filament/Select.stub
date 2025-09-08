@@ -1,0 +1,8 @@
+<?php
+
+namespace Filament\Forms\Components;
+
+/**
+ * @method Select optionsFromEnum(string $enum)
+ */
+class Select{}

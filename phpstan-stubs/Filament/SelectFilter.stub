@@ -1,0 +1,11 @@
+<?php
+
+namespace Filament\Tables\Filters;
+
+/**
+ * @method SelectFilter optionsFromEnum(string $enum)
+ */
+class SelectFilter
+{
+
+}
