@@ -13,6 +13,9 @@
 
     @include('portofolio')
 
+    {{-- Yummy extra sections (e.g., gallery) --}}
+    @include('yummy.extra_sections')
+
     @include('team_prod')
 
     @include('faq')

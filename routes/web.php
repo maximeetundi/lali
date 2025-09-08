@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Homepage uses the existing index view (now on Yummy layout)
-Route::view('/', 'index')->name('home');
+// Homepage (controller provides required data for partials)
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Preserve legacy homepage at /legacy
 Route::get('/legacy', [HomeController::class, 'index'])->name('home.legacy');
