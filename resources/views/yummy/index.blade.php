@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-          <img src="{{ asset('assets/img/hero-img.svg') }}" class="img-fluid animated" alt="">
+          <img src="{{ asset('assets/yummy/img/hero-img.png') }}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@
 
   <!-- Stats Section -->
   <section id="stats" class="stats section dark-background">
-    <img src="{{ asset('assets/img/breadcrumbs-bg.jpg') }}" alt="" data-aos="fade-in">
+    <img src="{{ asset('assets/yummy/img/stats-bg.jpg') }}" alt="" data-aos="fade-in">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
