@@ -6,6 +6,11 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Database\Seeders\Auth\AuthSeeder;
+use Database\Seeders\Site\AssetSeeder;
+use Database\Seeders\Site\MissionFaqSeeder;
+use Database\Seeders\Site\PartnerSeeder;
+use Database\Seeders\Site\PortofolioSeeder;
+use Database\Seeders\Site\TextSeeder;
 use Domain\Shop\Stock\Enums\StockType;
 use Domain\Shop\Stock\Models\SkuStock;
 use Illuminate\Database\Seeder;
@@ -31,6 +36,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             AuthSeeder::class,
+            AssetSeeder::class,
+            MissionFaqSeeder::class,
+            PartnerSeeder::class,
+            PortofolioSeeder::class,
+            TextSeeder::class,
             //BrandSeeder::class,
             //CategorySeeder::class,
             //ProductSeeder::class,
@@ -53,3 +63,4 @@ class DatabaseSeeder extends Seeder
         Artisan::call(OptimizeClearCommand::class);
     }
 }
+

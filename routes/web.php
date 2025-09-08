@@ -21,3 +21,5 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/view/product/{product}', [HomeController::class, 'show'])->name('product.view');
 Route::supportBubble();
 
+// Yummy frontend preview route
+Route::view('/yummy', 'yummy.index')->name('yummy.preview');
