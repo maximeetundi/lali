@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Homepage: use full Yummy view for a clean visual immediately
-Route::view('/', 'yummy.index')->name('home');
+// Homepage via controller so Yummy view receives dynamic data
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Preserve legacy homepage at /legacy
 Route::get('/legacy', [HomeController::class, 'index'])->name('home.legacy');

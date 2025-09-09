@@ -30,7 +30,7 @@ class HomeController extends Controller
 
       $products = Product::with('skus', 'media')->get();
    
-        return view('index', compact(
+        return view('yummy.index', compact(
             'image1', 'image2', 'video1', 'video2',
              'missions', 'faqs', 'partners',
               'portofolios', 'texts', 'products'));

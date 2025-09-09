@@ -34,7 +34,7 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">{{ config('app.name', 'Yummy') }}</h1>
+        <h1 class="sitename">{{ gen_text($texts ?? collect(), 'nom_entreprise') ?: config('app.name', 'Yummy') }}</h1>
         <span>.</span>
       </a>
 
@@ -66,8 +66,8 @@
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
             <h4>Adresse</h4>
-            <p>Yaoundé</p>
-            <p>Cameroun</p>
+            <p>{{ gen_text($texts ?? collect(), 'address_line1') ?: 'Yaoundé' }}</p>
+            <p>{{ gen_text($texts ?? collect(), 'address_line2') ?: 'Cameroun' }}</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 d-flex">
@@ -75,8 +75,8 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Téléphone:</strong> <span>+237 000 000 000</span><br>
-              <strong>Email:</strong> <span>contact@example.com</span><br>
+              <strong>Téléphone:</strong> <span>{{ gen_text($texts ?? collect(), 'contact_phone') ?: '+237 000 000 000' }}</span><br>
+              <strong>Email:</strong> <span>{{ gen_text($texts ?? collect(), 'contact_email') ?: 'contact@example.com' }}</span><br>
             </p>
           </div>
         </div>
@@ -93,10 +93,10 @@
         <div class="col-lg-3 col-md-6">
           <h4>Suivez-nous</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="{{ gen_text($texts ?? collect(), 'social_twitter') ?: '#' }}" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="{{ gen_text($texts ?? collect(), 'social_facebook') ?: '#' }}" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="{{ gen_text($texts ?? collect(), 'social_instagram') ?: '#' }}" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="{{ gen_text($texts ?? collect(), 'social_linkedin') ?: '#' }}" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
